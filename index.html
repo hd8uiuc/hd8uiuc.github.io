@@ -1,7 +1,21 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Hello World</h1>
-        <p>test Paragraph</p>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gasoline Prices & Trends</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        
+    </head>
+
+    <body onload = 'init()'>
+        <h1>US Gasoline Prices, Consumption & Inventory in last 15 yrs</h1>
+        <p> The energy intensity for cooling commercial buildings in the United States depends on the climate the building is located in. Energy intensity in buildings is the energy consumed per square foot of floorspace. U.S. commercial buildings in hot or very hot climates, which are primarily in the southernmost parts of the country, were more than six times more energy-intensive for cooling (14.2 thousand British thermal units per square foot [MBtu/sf]) than buildings in cold or very cold climates (2.3 MBtu/sf), according to our latest Commercial Buildings Energy Consumption Survey (CBECS) </p>
+        <a href="scene2.html" class="button-link">Next Page</a><br><br>
+        <svg class="chart" width="300" height="400" style="border:solid;"></svg> <br>
+        <script src="index.js"></script>
+            
     </body>
+    
 </html>

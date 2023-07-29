@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gasoline Prices & Trends</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+
+    <body onload = 'init()'>
+        <h1>Gasoline Prices & Consumption in USA in last 5 yrs</h1>
+        <p> The energy intensity for</p>
+        <svg class="chart" width="600" height="400" style="border:solid;">
+        </svg>
+        <div>
+            <label for="year-slider">Select Year:</label>
+            <input type="range" min="2007" max="2022" step="1" value="2018" class="slider" id="year-slider">
+            <span id="selected-year">2007</span>
+        </div>
+        <script src="scene2.js"></script> 
+    </body>
+    
+</html>
