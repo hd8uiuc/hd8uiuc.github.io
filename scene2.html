@@ -2,23 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Gasoline Prices & Trends</title>
+        <title>Gasoline Prices in major US states</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <script src="https://d3js.org/d3.v7.min.js"></script>
     </head>
 
-    <body onload = 'init()'>
-        <h1>Gasoline Prices & Consumption in USA in last 5 yrs</h1>
-        <p> The energy intensity for</p>
-        <svg class="chart" width="600" height="400" style="border:solid;">
-        </svg>
+
+    <body onload = 'initScene2()'>
+        <h1>US Motor Vehicle Gasoline Prices in major US states between 2007-2022</h1>
+        <p>As per the U.S. Energy Information Administration website, the gas prices are collected for different regions(West, South, Northeast, Midwest) covering some major US states & cities.  In the below representation, you can find the varying gasoline prices for some major US states during the period between 2007 & 2022.</p>
+        <p></p>
+        <p1>Browse through the pages in the links given below to get to know more about the gas price trends over the years and other related information.To explore further please checkout the <a href="https://www.eia.gov/petroleum/">EIA website</a>.</p1>
+        <p></p>
+        <a href="index.html" class="button-link" id="s2_btn1">1</a>
+        <a class="button-link" disabled>2</a>
+        <a href="scene3.html" class="button-link" id="s2_btn3">3</a>
+        <p></p>
+        <svg class="chart" width="600" height="400"></svg> <br>
+        <p></p>
+        <p></p>
+        
         <div>
             <label for="year-slider">Select Year:</label>
-            <input type="range" min="2007" max="2022" step="1" value="2018" class="slider" id="year-slider">
+            <input type="range" min="2007" max="2022" step="1" value="2007" class="slider" id="year-slider">
             <span id="selected-year">2007</span>
-        </div>
-        <script src="scene2.js"></script> 
+        </div><br>
+        
+        <p class="chart-description2">Chart 2: US Retail Gasoline Prices in major US states between 2007-2022</p>        
+        <script src="scene2.js"></script>
+         
     </body>
     
 </html>

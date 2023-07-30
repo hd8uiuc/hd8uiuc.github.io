@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Gasoline Prices & Trends</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://d3js.org/d3.v7.min.js"></script>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Gasoline Prices & Trends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-annotation@2.10.4/dist/d3-annotation.min.js"></script>
+</head>
 
-    <body onload = 'init()'>
-        <h1>US Gasoline Prices, Consumption & Inventory in last 15 yrs</h1>
-        <p> The energy intensity for cooling commercial buildings in the United States depends on the climate the building is located in. Energy intensity in buildings is the energy consumed per square foot of floorspace. U.S. commercial buildings in hot or very hot climates, which are primarily in the southernmost parts of the country, were more than six times more energy-intensive for cooling (14.2 thousand British thermal units per square foot [MBtu/sf]) than buildings in cold or very cold climates (2.3 MBtu/sf), according to our latest Commercial Buildings Energy Consumption Survey (CBECS) </p>
-        <a href="scene2.html" class="button-link">Next Page</a><br><br>
-        <svg class="chart" width="300" height="400" style="border:solid;"></svg> <br>
-        <script src="index.js"></script>
-            
-    </body>
-    
+<body onload='initScene1()'>
+<h1>US Motor Gasoline Prices, Supply & Consumption between 2007-2022</h1>
+<p>The U.S. retail gasoline prices have experienced significant fluctuations over the years from 2007 to 2022. The chart below provides the price trends of the motor vehicle gasoline prices in the United States. The gasoline prices are a reflection of the intricate interplay of various factors such as crude oil prices, supply and demand dynamics, geopolitical events, and economic conditions. Spanning a period of fifteen years, the data sheds light on the patterns and trends that have influenced the cost of gasoline at the retail level, impacting consumers, businesses, and the overall transportation sector. Analyzing this dataset can offer valuable information for understanding the factors driving gasoline prices and their implications on the nation's energy landscape and economy.</p>
+<p></p>
+<p1>Browse through the pages in the links given below to get to know more about the gas price trends over the years and other related information. To explore further please checkout the <a href="https://www.eia.gov/petroleum/">EIA website</a>.</p1>
+<p></p>
+<a class="button-link" id="btn1" disabled>1</a>
+<a href="scene2.html" class="button-link" id="btn2">2</a>
+<a href="scene3.html" class="button-link" id="btn3">3</a><br><br>
+<svg class="chart" width="800" height="400"></svg> <br>
+<p class="chart-description1">Chart 1: US Retail Gasoline Prices between 2007-2022</p>        
+<script src="index.js"></script>
+</body>
 </html>
